@@ -24,32 +24,32 @@
 
                 <nav class="alphaNav">
                     <ul>
-                        <li><a href="beginswith.aspx?letter=a">A</a></li>
-                        <li><a href="beginswith.aspx?letter=b">B</a></li>
-                        <li><a href="beginswith.aspx?letter=c">C</a></li>
-                        <li><a href="beginswith.aspx?letter=d">D</a></li>
-                        <li><a href="beginswith.aspx?letter=e">E</a></li>
-                        <li><a href="beginswith.aspx?letter=f">F</a></li>
-                        <li><a href="beginswith.aspx?letter=g">G</a></li>
-                        <li><a href="beginswith.aspx?letter=h">H</a></li>
-                        <li><a href="beginswith.aspx?letter=i">I</a></li>
-                        <li><a href="beginswith.aspx?letter=j">J</a></li>
-                        <li><a href="beginswith.aspx?letter=k">K</a></li>
-                        <li><a href="beginswith.aspx?letter=l">L</a></li>
-                        <li><a href="beginswith.aspx?letter=m">M</a></li>
-                        <li><a href="beginswith.aspx?letter=n">N</a></li>
-                        <li><a href="beginswith.aspx?letter=o">O</a></li>
-                        <li><a href="beginswith.aspx?letter=p">P</a></li>
-                        <li><a href="beginswith.aspx?letter=q">Q</a></li>
-                        <li><a href="beginswith.aspx?letter=r">R</a></li>
-                        <li><a href="beginswith.aspx?letter=s">S</a></li>
-                        <li><a href="beginswith.aspx?letter=t">T</a></li>
-                        <li><a href="beginswith.aspx?letter=u">U</a></li>
-                        <li><a href="beginswith.aspx?letter=v">V</a></li>
-                        <li><a href="beginswith.aspx?letter=w">W</a></li>
-                        <li><a href="beginswith.aspx?letter=x">X</a></li>
-                        <li><a href="beginswith.aspx?letter=y">Y</a></li>
-                        <li><a href="beginswith.aspx?letter=z">Z</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=a'>A</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=b'>B</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=c'>C</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=d'>D</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=e'>E</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=f'>F</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=g'>G</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=h'>H</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=i'>I</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=j'>J</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=k'>K</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=l'>L</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=m'>M</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=n'>N</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=o'>O</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=p'>P</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=q'>Q</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=r'>R</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=s'>S</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=t'>T</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=u'>U</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=v'>V</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=w'>W</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=x'>X</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=y'>Y</a></li>
+                        <li><a href='searchresults.aspx?search=""&letter=z'>Z</a></li>
                     </ul>
                 </nav>
 

@@ -13,6 +13,6 @@ public partial class HardAssLyrics : System.Web.UI.MasterPage
     }
     protected void searchButton_Click(object sender, EventArgs e)
     {
-        Response.Redirect("searchresults.aspx?search=" + searchTextBox.Text);
+        Response.Redirect("searchresults.aspx?search=" + searchTextBox.Text + "&letter=\"\"");
     }
 }

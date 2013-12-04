@@ -6,10 +6,11 @@
     <h2>Search Results:</h2>
     <asp:SqlDataSource ID="bandSearchSqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:HardAssLyrics %>" ProviderName="<%$ ConnectionStrings:HardAssLyrics.ProviderName %>" SelectCommand="SELECT [BandName], [BandID] 
 FROM [Band] 
-WHERE (([BandName] LIKE '%' + ? + '%')) 
+WHERE (([BandName] LIKE '%' + ? + '%') OR ([BandName] LIKE ? + '%'))
 ORDER BY [BandName]">
         <SelectParameters>
             <asp:QueryStringParameter Name="Contains" QueryStringField="search" Type="String" />
+            <asp:QueryStringParameter Name="BeginsWith" QueryStringField="letter" Type="String" />
         </SelectParameters>
         </asp:SqlDataSource>
         <asp:GridView ID="bandResultsGridView" runat="server" AutoGenerateColumns="False" CssClass="searchResultsGrid" DataSourceID="bandSearchSqlDataSource" GridLines="None" DataKeyNames="BandID">
@@ -19,10 +20,11 @@ ORDER BY [BandName]">
         </asp:GridView>
         <asp:SqlDataSource ID="albumSearchSqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:HardAssLyrics %>" ProviderName="<%$ ConnectionStrings:HardAssLyrics.ProviderName %>" SelectCommand="SELECT [AlbumName], [AlbumID], BandName, BandID_FK
 FROM [Album], [Band]
-WHERE [Band].BandID = [Album].BandID_FK AND (([AlbumName] LIKE '%' + ? + '%'))
+WHERE [Band].BandID = [Album].BandID_FK AND (([AlbumName] LIKE '%' + ? + '%') OR ([AlbumName] LIKE ? + '%'))
 ORDER BY AlbumName">
             <SelectParameters>
                 <asp:QueryStringParameter Name="Contains" QueryStringField="search" Type="String" />
+                <asp:QueryStringParameter Name="BeginsWith" QueryStringField="letter" Type="String" />
             </SelectParameters>
         </asp:SqlDataSource>
         <asp:GridView ID="albumResultsGridView" runat="server" AutoGenerateColumns="False" CssClass="searchResultsGrid" DataSourceID="albumSearchSqlDataSource">
