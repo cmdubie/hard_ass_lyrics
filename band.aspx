@@ -31,8 +31,10 @@ ORDER BY AlbumReleaseDate">
         </SelectParameters>
     </asp:SqlDataSource>
     <asp:Repeater ID="bandInfoRepeater" runat="server" DataSourceID="bandInfoSQLDataSource">
-        <ItemTemplate>
+        <HeaderTemplate>
             <h2><%# Eval("BandName") %></h2>
+        </HeaderTemplate>
+        <ItemTemplate>
             <div id="bandImage">
                 <img src="images/band/<%# Eval("BandImageName") %>" /> 
             </div>
