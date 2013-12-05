@@ -31,10 +31,8 @@ ORDER BY AlbumReleaseDate">
         </SelectParameters>
     </asp:SqlDataSource>
     <asp:Repeater ID="bandInfoRepeater" runat="server" DataSourceID="bandInfoSQLDataSource">
-        <HeaderTemplate>
-            <h2><%# Eval("BandName") %></h2>
-        </HeaderTemplate>
         <ItemTemplate>
+            <h2><%# Eval("BandName") %></h2>
             <div id="bandImage">
                 <img src="images/band/<%# Eval("BandImageName") %>" /> 
             </div>
@@ -53,7 +51,7 @@ ORDER BY AlbumReleaseDate">
     </asp:GridView>
     <asp:GridView ID="bandInfoDetailsView" runat="server" Height="50px" Width="125px" AutoGenerateRows="False" DataSourceID="bandInfoSQLDataSource" AutoGenerateColumns="False">
         <Columns>
-            <asp:BoundField DataField="BandInfo" DataFormatString="{0}" HeaderText="Band Information:" NullDisplayText="No information for this band at this time." />
+            <asp:BoundField DataField="BandInfo" DataFormatString="{0}" HeaderText="Band Information:" NullDisplayText="&lt;em&gt;No information available.&lt;/em&gt;" />
         </Columns>
     </asp:GridView>
     <h3>Discography:</h3>

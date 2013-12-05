@@ -9,15 +9,13 @@ WHERE Rating.AlbumID_FK=Album.AlbumID
 GROUP BY AlbumID_FK) AS CalculatedRating
 FROM Album, [Band]
 WHERE ((([Band].BandID)=[Album].[BandID_FK]))
-ORDER BY Album.AlbumDateAdded DESC;
-
-"></asp:SqlDataSource>
+ORDER BY Album.AlbumDateAdded DESC;"></asp:SqlDataSource>
     <h2>Recently Added:</h2>
     <asp:Repeater ID="AlbumRepeater" runat="server" DataSourceID="AlbumRepeaterDataSource">
         <ItemTemplate>
             <div class="recently-added-repeater">
             <a href="album.aspx?album=<%# Eval("AlbumID") %>"><img src="images\albumcover\<%# Eval("AlbumImageName") %>"/></a>
-            <a href="album.aspx?album=<%# Eval("AlbumID") %>"><span class="album"><%# Eval("AlbumName") %></span><span class="align-right-rating"><%# Eval("CalculatedRating") %></span></a>
+            <a href="album.aspx?album=<%# Eval("AlbumID") %>"><span class="album"><%# Eval("AlbumName") %></span></a><span class="align-right-rating"><%# Eval("CalculatedRating") %></span>
             <p>by <a href="band.aspx?band=<%# Eval("BandID_FK") %>"><strong><%# Eval("BandName") %></strong></a></p>
             </div>
         </ItemTemplate>
