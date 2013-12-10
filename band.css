@@ -1,1 +1,13 @@
-﻿
+﻿#bandImage {
+    float: left;
+    width: 48%
+}
+
+#bandInfo, ContentPlaceHolder1_bandMemberGridView {
+    float: right;
+    width: 48%;
+}
+
+
+
+

@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:Label runat="server" ID="welcomeLabel"></asp:Label>
     <p>BEWARE!  This lyrics and images presented on this website depict scenes of graphic violence and brutality.  If you are seeing a doctor for a heart condition, you may want to consider doubling your medication before proceeding.  Enter at your own risk.</p>
-    <asp:SqlDataSource ID="AlbumRepeaterDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:HardAssLyrics %>" ProviderName="<%$ ConnectionStrings:HardAssLyrics.ProviderName %>" SelectCommand="SELECT TOP 6 Album.AlbumID, Album.AlbumName, Album.AlbumImageName, Album.AlbumDateAdded, Album.BandID_FK, [Band].BandName, 
+    <asp:SqlDataSource ID="AlbumRepeaterDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:HardAssLyrics %>" ProviderName="<%$ ConnectionStrings:HardAssLyrics.ProviderName %>" SelectCommand="SELECT TOP 10 Album.AlbumID, Album.AlbumName, Album.AlbumImageName, Album.AlbumDateAdded, Album.BandID_FK, [Band].BandName, 
      (SELECT ROUND(SUM(RatingValue)/COUNT(AlbumID_FK))
       FROM Rating
       WHERE Rating.AlbumID_FK=Album.AlbumID

@@ -41,7 +41,7 @@ ORDER BY AlbumReleaseDate">
                 <span id="formed">Formed: <%# Eval("BandBornDate") %></span>
                 <span id="disbanded">Disbanded: <%# Eval("BandDeadDate") %></span>
                 <span id="origin">Region of Origin: <%# Eval("BandPlaceOfOrigin") %></span>
-            </div>      
+            </div>   
         </ItemTemplate>
     </asp:Repeater>
     <asp:GridView ID="bandMemberGridView" runat="server" AutoGenerateColumns="False" DataSourceID="bandMemberSqlDataSource">

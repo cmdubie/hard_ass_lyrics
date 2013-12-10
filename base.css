@@ -67,13 +67,15 @@ a:visited {
     margin: 2px; 
 }
 
-.alphaNav a, .navButton {
+.alphaNav a, .navButton
+{
     color: #8B8C87;
     background: #000;
     border: 1px solid #8b8c87;
     border-radius: 3px;
     padding: 3px 5px;
-
+    -webkit-text-shadow: none;
+    text-shadow: none;
 }
 
 #searchTextBox {
@@ -83,10 +85,12 @@ a:visited {
     background-color: #abaca7;
 }
 
-#searchTextBoxValidator {
-    display: inline-block;
-    margin: 0 auto;
-    width: 400px;
+#homeButton {
+    margin: 5px 0 5px 140px;
+    width: 125px;
+}
+
+#main-nav p {
     text-align: center;
 }
 

@@ -56,9 +56,12 @@
             </header>
 
             <article>
-                <nav id="main-nav"><asp:Button runat="server" ID="logInButton" Text="Log In" CssClass="navButton" ToolTip="Log In or Register" CausesValidation="False" UseSubmitBehavior="False" PostBackUrl="login.aspx" /><asp:TextBox ID="searchTextBox" runat="server" ToolTip="Search for bands or albums" ValidationGroup="Master"></asp:TextBox><asp:Button runat="server" Text="Search" ID="searchButton" CssClass="navButton" ToolTip="Search band names or album titles" OnClick="searchButton_Click" ValidationGroup="Master" />
-                    
-                <p><asp:RequiredFieldValidator ID="searchTextBoxValidator" runat="server" ErrorMessage="Nothing was entered in the Search text box." ControlToValidate="searchTextBox" CssClass="validtionErrorMessage" ValidationGroup="Master">You must enter something to search for!</asp:RequiredFieldValidator></p>
+                <nav id="main-nav">
+                    <asp:Button runat="server" ID="logInButton" Text="Log In" CssClass="navButton" ToolTip="Log In or Register" CausesValidation="False" UseSubmitBehavior="False" PostBackUrl="login.aspx" />
+                    <asp:TextBox ID="searchTextBox" runat="server" ToolTip="Search for bands or albums" ValidationGroup="Master"></asp:TextBox>
+                    <asp:Button runat="server" Text="Search" ID="searchButton" CssClass="navButton" ToolTip="Search band names or album titles" OnClick="searchButton_Click" ValidationGroup="Master" />
+                    <p><asp:RequiredFieldValidator ID="searchTextBoxValidator" runat="server" ErrorMessage="Nothing was entered in the Search text box." ControlToValidate="searchTextBox" CssClass="validtionErrorMessage" ValidationGroup="Master" Display="Dynamic">You must enter something to search for!</asp:RequiredFieldValidator></p>
+                    <asp:Button runat="server" Text="Home" ID="homeButton" CssClass="navButton" ToolTip="Home" OnClick="homeButton_Click"/>          
                 </nav>
                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
