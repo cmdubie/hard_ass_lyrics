@@ -1,0 +1,30 @@
+﻿#ContentPlaceHolder1_welcomeLabel {
+    font-family: "Marcellus SC", serif;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    -webkit-text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+    text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+}
+
+.recently-added-repeater {
+    width: 300px;
+    float: left;
+    margin: 10px 0;
+}
+
+.recently-added-repeater img {
+    border: 1px solid #8b8c87;
+    box-shadow: 8px 8px #000; 
+}
+
+.line{
+    display: block;
+    width: 100%;
+}
+
+.align-right-rating {
+    float: right;
+    margin-right: 70px;
+}
+

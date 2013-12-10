@@ -34,7 +34,7 @@ ORDER BY AlbumReleaseDate">
         <ItemTemplate>
             <h2><%# Eval("BandName") %></h2>
             <div id="bandImage">
-                <img src="images/band/<%# Eval("BandImageName") %>" /> 
+                <img src="images/band/<%# Eval("BandImageName") %>" alt="No image available."/> 
             </div>
             <div id="bandInfo">
                 <span id="formed">Formed: <%# Eval("BandBornDate") %></span>
@@ -58,9 +58,8 @@ ORDER BY AlbumReleaseDate">
     <asp:Repeater ID="AlbumRepeater" runat="server" DataSourceID="discographyRepeaterDataSource">
         <ItemTemplate>
             <div class="discography-repeater">
-            <a href="album.aspx?album=<%# Eval("AlbumID") %>"><img src="images\albumcover\<%# Eval("AlbumImageName") %>"/></a>
-            <a href="album.aspx?album=<%# Eval("AlbumID") %>"><span class="album"><%# Eval("AlbumName") %></span><span class="align-right-rating"><%# Eval("CalculatedRating") %></span></a>
-            <p>by <a href="band.aspx?band=<%# Eval("BandID_FK") %>"><strong><%# Eval("BandName") %></strong></a></p>
+            <a href="albuminfo.aspx?album=<%# Eval("AlbumID") %>"><img src="images\albumcover\<%# Eval("AlbumImageName") %>" height="225" width="225" alt="Image not available."/></a>
+            <a href="albuminfo.aspx?album=<%# Eval("AlbumID") %>"><span class="album"><%# Eval("AlbumName") %></span><span class="align-right-rating"><%# Eval("CalculatedRating") %></span></a>
             </div>
         </ItemTemplate>
     </asp:Repeater>

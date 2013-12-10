@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HardAssLyrics.master" AutoEventWireup="true" CodeFile="album.aspx.cs" Inherits="album" %>
+﻿<%@ Master Language="C#" MasterPageFile="~/HardAssLyrics.master" AutoEventWireup="true" CodeFile="Album.master.cs" Inherits="Album" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -33,23 +33,19 @@ ORDER BY AlbumSong.AlbumSongPosition">
     </asp:SqlDataSource>
     <div id="tracklisting">
         <h3>Track Listing:</h3>
-        <asp:DataList ID="trackListingDataList" runat="server" DataSourceID="trackListingSqlDataSource">
+        <asp:Repeater ID="trackListingRepeater" runat="server" DataSourceID="trackListingSqlDataSource" OnItemCommand="songLyricsDisplay_Event">
+            <HeaderTemplate>
+                <ol>
+            </HeaderTemplate>
             <ItemTemplate>
-                <asp:Label ID="AlbumSongPositionLinkButton" runat="server" Text='<%# Eval("AlbumSongPosition") %>' />
-                <asp:LinkButton ID="SongTitleLinkButton" runat="server" Text='<%# Eval("SongTitle") %>' />
-                <asp:HiddenField ID="songLinkButtonValue" runat="server" Value='<%# Eval("SongID") %>'/>
+                <li><asp:LinkButton ID="SongTitleLinkButton" runat="server" Text='<%# Eval("SongTitle") %>' CausesValidation="False" CommandName='<%# Eval("SongID") %>' /></li>
             </ItemTemplate>
-        </asp:DataList>
-        <asp:Panel ID="albumInfoPanel" runat="server">
-            <asp:GridView ID="albumInfoGridView" runat="server" AutoGenerateColumns="False" DataSourceID="albumInfoSqlDataSource">
-                <Columns>
-                    <asp:BoundField DataField="AlbumInfo" DataFormatString="{0}" HeaderText="Album Info:" NullDisplayText="&lt;em&gt;No information available.&lt;/em&gt;" />
-                </Columns>
-            </asp:GridView>
-        </asp:Panel>
-        <asp:Panel ID="songLyricsPanel" runat="server">
-            <!-- display song lyrics based on value of link clicked - need display and datasource that pulls value from control -->
-        </asp:Panel>
+            <FooterTemplate>
+                </ol>
+            </FooterTemplate>
+        </asp:Repeater>
     </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
 </asp:Content>
+
 

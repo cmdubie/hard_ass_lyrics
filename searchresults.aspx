@@ -29,7 +29,7 @@ ORDER BY AlbumName">
         </asp:SqlDataSource>
         <asp:GridView ID="albumResultsGridView" runat="server" AutoGenerateColumns="False" CssClass="searchResultsGrid" DataSourceID="albumSearchSqlDataSource">
             <Columns>
-                <asp:HyperLinkField DataNavigateUrlFields="AlbumID" DataNavigateUrlFormatString="album.aspx?album={0}" DataTextField="AlbumName" DataTextFormatString="&lt;span class=&quot;album&quot;&gt;{0}&lt;/span&gt;" HeaderText="&lt;h3&gt;Album&lt;/h3&gt;" Text="Album" />
+                <asp:HyperLinkField DataNavigateUrlFields="AlbumID" DataNavigateUrlFormatString="albuminfo.aspx?album={0}" DataTextField="AlbumName" DataTextFormatString="&lt;span class=&quot;album&quot;&gt;{0}&lt;/span&gt;" HeaderText="&lt;h3&gt;Album&lt;/h3&gt;" Text="Album" />
                 <asp:HyperLinkField DataNavigateUrlFields="BandID_FK" DataNavigateUrlFormatString="band.aspx?band={0}" DataTextField="BandName" DataTextFormatString="&lt;strong&gt;{0}&lt;/strong&gt;" HeaderText="&lt;h3&gt;Band&lt;/h3&gt;" Text="Band" />
             </Columns>
         </asp:GridView>

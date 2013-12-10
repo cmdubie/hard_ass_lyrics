@@ -1,0 +1,109 @@
+﻿html {
+    background: #000 url("images/stone-metal-background.jpg") no-repeat fixed;
+}
+
+body{
+    font-size: 1.25em;
+    color: #bBbCb7;
+    -webkit-text-shadow: 2px 2px #000, 2px 2px 1px #8b8c87;
+    text-shadow: 2px 2px #000, 2px 2px 1px #8b8c87;
+    width: 65%;
+    margin: 0 auto;
+    min-width: 1000px;
+}
+
+article {
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-family: "Marcellus SC", serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+    font-size: 5em;
+    text-align: center;
+    -webkit-text-shadow: 3px 3px #000, 4px 4px 2px #8B8C87;
+    text-shadow: 3px 3px #000, 4px 4px 2px #8B8C87;
+}
+
+h2
+{
+    font-family: "Marcellus SC", serif;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    -webkit-text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+    text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+}
+
+a {
+    color: #dbdcd7;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #abaca7;
+}
+
+.alphaNav ul {
+    list-style: none;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: -40px; 
+}
+
+#main-nav {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 400px;
+}
+
+.alphaNav li {
+    display: inline-block;
+    margin: 2px; 
+}
+
+.alphaNav a, .navButton {
+    color: #8B8C87;
+    background: #000;
+    border: 1px solid #8b8c87;
+    border-radius: 3px;
+    padding: 3px 5px;
+
+}
+
+#searchTextBox {
+    margin-left: 50px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #abaca7;
+}
+
+#searchTextBoxValidator {
+    display: inline-block;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+
+.navButton {
+    padding: 5px 15px;
+}
+
+#searchButton {
+    float: right;
+}
+
+footer {
+    font-size: .8em;
+    border-top: 1px solid #abaca7;
+    padding: 30px;
+}
+
+footer span {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
