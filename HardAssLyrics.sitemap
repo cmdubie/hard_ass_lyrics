@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="default.aspx" title="Hard-Ass Lyrics - Home"  description="Home">
+      <siteMapNode url="band.aspx" title="Hard-Ass Lyrics - Band"  description="">
+        <siteMapNode url="albuminfo.aspx" title="Hard-Ass Lyrics - Album" description="" />
+        <siteMapNode url="albumlyrics.aspx" title="Hard-Ass Lyrics - Song" description="" />
+      </siteMapNode>
+      <siteMapNode url="searchresults.aspx" title="Hard-Ass Lyrics - Search Results"  description="" />
+      <siteMapNode url="login.aspx" title="Hard-Ass Lyrics - Log In" description="" />
+    </siteMapNode>
+</siteMap>

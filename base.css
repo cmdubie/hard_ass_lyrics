@@ -37,12 +37,16 @@ h2
 }
 
 a {
-    color: #dbdcd7;
+    color: #fbfcf7;
+    -webkit-text-shadow: 2px 2px #000, 2px 2px 3px #dbdcd7;
+    text-shadow: 2px 2px #000, 2px 2px 3px #dbdcd7;
     text-decoration: none;
 }
 
 a:visited {
-    color: #abaca7;
+    color: #dbdcd7;
+    -webkit-text-shadow: 2px 2px #000, 2px 2px 1px #abaca7;
+    text-shadow: 2px 2px #000, 2px 2px 3px #8b8c87;
 }
 
 .alphaNav ul {

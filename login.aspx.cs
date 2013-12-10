@@ -36,22 +36,23 @@ public partial class login : System.Web.UI.Page
                 {
                     Response.Redirect(Session["from"].ToString());
                 }
+
                 else
                 {
                     Response.Redirect("default.aspx");
                 }
             }
+
             else
             {
-                errorLabel.Text = "The case of your User Name or Password is incorrect.";
+                errorLabel.Text = "The case of your User Name or Password may be incorrect.";
             }
 
         }
+
         else
         {
-
             errorLabel.Text = "The User Name or Password may be incorrect.";
         }
-
     }
 }
