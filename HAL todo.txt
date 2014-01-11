@@ -14,6 +14,12 @@ Hard Ass Lyrics:  to do
 		a. figure out how to exclude common words (the, a, an) in searches
 		b. searchable lyrics (big project)
 		
-	3. IIS hosting
-	-
+	3.	Change all database connections and SQL to manual/code behind.
+		
+	4. IIS hosting
+	
 		a. figure out how to host my own websites using IIS and "no-IP" services
+		
+	5.  MySQL
+		
+		a. attemp to convert Access database to MySQL
