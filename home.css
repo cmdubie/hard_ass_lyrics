@@ -8,7 +8,7 @@
 }
 
 .recently-added-repeater {
-    width: 300px;
+    width: 249px;
     float: left;
     margin: 10px 0;
 }
@@ -18,13 +18,8 @@
     box-shadow: 8px 8px #000; 
 }
 
-.line{
-    display: block;
-    width: 100%;
-}
-
 .align-right-rating {
     float: right;
-    margin-right: 70px;
+    margin-right: 20px;
 }
 

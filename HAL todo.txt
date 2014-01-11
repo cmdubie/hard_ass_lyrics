@@ -1,0 +1,19 @@
+
+Hard Ass Lyrics:  to do
+
+	1. Log-in
+	
+		a. Return to page navigated from
+			1. use session variables to store current page (on page load) and the query string
+			2. rebuild the url from those variables once logged in (link on success message?)
+			
+		b. Register
+		
+	2. Search function
+	
+		a. figure out how to exclude common words (the, a, an) in searches
+		b. searchable lyrics (big project)
+		
+	3. IIS hosting
+	-
+		a. figure out how to host my own websites using IIS and "no-IP" services

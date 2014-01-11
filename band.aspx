@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HardAssLyrics.master" AutoEventWireup="true" CodeFile="band.aspx.cs" Inherits="Band" %>
+<%@ Import Namespace="System.Net.Mail" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link type="text/css" rel="stylesheet" href="band.css" />
@@ -38,29 +39,34 @@ ORDER BY AlbumReleaseDate">
                 <img src="images/band/<%# Eval("BandImageName") %>" alt="No image available."/> 
             </div>
             <div id="bandInfo">
-                <span id="formed">Formed: <%# Eval("BandBornDate") %></span>
-                <span id="disbanded">Disbanded: <%# Eval("BandDeadDate") %></span>
-                <span id="origin">Region of Origin: <%# Eval("BandPlaceOfOrigin") %></span>
+                <span id="generalHeader">General:</span>
+                <span id="formed">Formed: <span class="alignRightSpan"> <%# Eval("BandBornDate") %></span></span>
+                <span id="disbanded">Disbanded: <span class="alignRightSpan"> <%# Eval("BandDeadDate") %></span></span>
+                <span id="origin">Region of Origin:</span>
+                <span id="originEval"> <%# Eval("BandPlaceOfOrigin") %></span>
             </div>   
         </ItemTemplate>
     </asp:Repeater>
-    <asp:GridView ID="bandMemberGridView" runat="server" AutoGenerateColumns="False" DataSourceID="bandMemberSqlDataSource">
+    <div id="bandMember">
+    <asp:GridView ID="bandMemberGridView" runat="server" AutoGenerateColumns="False" DataSourceID="bandMemberSqlDataSource" BorderStyle="None" GridLines="None">
         <Columns>
-            <asp:BoundField DataField="BandMemberName" HeaderText="Band Members:" ReadOnly="True" SortExpression="BandMemberName" />
-            <asp:BoundField DataField="BandMemberRole" HeaderText="Role:" SortExpression="BandMemberRole" />
+            <asp:BoundField DataField="BandMemberName" HeaderText="Members:" ReadOnly="True" SortExpression="BandMemberName" />
+            <asp:BoundField DataField="BandMemberRole" SortExpression="BandMemberRole" />
         </Columns>
     </asp:GridView>
-    <asp:GridView ID="bandInfoDetailsView" runat="server" Height="50px" Width="125px" AutoGenerateRows="False" DataSourceID="bandInfoSQLDataSource" AutoGenerateColumns="False">
+    </div>
+    <asp:GridView ID="bandInfoDetailsView" runat="server" AutoGenerateRows="False" DataSourceID="bandInfoSQLDataSource" AutoGenerateColumns="False" BorderStyle="None" GridLines="None">
         <Columns>
             <asp:BoundField DataField="BandInfo" DataFormatString="{0}" HeaderText="Band Information:" NullDisplayText="&lt;em&gt;No information available.&lt;/em&gt;" />
         </Columns>
     </asp:GridView>
+    <div class="clear"></div>
     <h3>Discography:</h3>
     <asp:Repeater ID="AlbumRepeater" runat="server" DataSourceID="discographyRepeaterDataSource">
         <ItemTemplate>
             <div class="discography-repeater">
             <a href="albuminfo.aspx?album=<%# Eval("AlbumID") %>"><img src="images\albumcover\<%# Eval("AlbumImageName") %>" height="225" width="225" alt="Image not available."/></a>
-            <a href="albuminfo.aspx?album=<%# Eval("AlbumID") %>"><span class="album"><%# Eval("AlbumName") %></span><span class="align-right-rating"><%# Eval("CalculatedRating") %></span></a>
+            <div class="line"><a href="albuminfo.aspx?album=<%# Eval("AlbumID") %>"><span class="album"><%# Eval("AlbumName") %></span></a><span class="align-right-rating"><%# Eval("CalculatedRating") %></span></div>
             </div>
         </ItemTemplate>
     </asp:Repeater>

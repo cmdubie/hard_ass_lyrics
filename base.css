@@ -1,15 +1,14 @@
 ﻿html {
-    background: #000 url("images/stone-metal-background.jpg") no-repeat fixed;
+    background: #000 url("images/stone-metal-background.jpg") no-repeat fixed center;
 }
 
 body{
-    font-size: 1.25em;
+    font-size: 1em;
     color: #bBbCb7;
     -webkit-text-shadow: 2px 2px #000, 2px 2px 1px #8b8c87;
     text-shadow: 2px 2px #000, 2px 2px 1px #8b8c87;
-    width: 65%;
     margin: 0 auto;
-    min-width: 1000px;
+    width: 1000px;
 }
 
 article {
@@ -53,7 +52,8 @@ a:visited {
     list-style: none;
     width: 960px;
     margin: 0 auto;
-    margin-top: -40px; 
+    margin-top: -40px;
+    font-size: 1.25em;
 }
 
 #main-nav {
@@ -114,4 +114,10 @@ footer span {
 
 .clear {
     clear: both;
+}
+
+.line{
+    display: block;
+    width: 100%;
+    padding-top: 3px;
 }

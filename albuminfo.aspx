@@ -65,7 +65,6 @@ ORDER BY Rating.[RatingDate];" UpdateCommand="UPDATE [Rating] SET [RatingValue] 
                     <asp:BoundField DataField="RatingComment" HeaderText="Comment" SortExpression="RatingComment" />
                 </Columns>
             </asp:GridView>
-            
         </asp:Panel>
     </div>
 </asp:Content>

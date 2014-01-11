@@ -1,0 +1,30 @@
+﻿#albumImage {
+    width: 25%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+#albumImage img {
+    border: 1px solid #8b8c87;
+    box-shadow: 8px 8px #000; 
+}
+
+.align-right-rating {
+    float: right;
+    margin-right: 20px;
+}
+
+#tracklisting {
+    width: 70%;
+    float: left;
+    margin: -20px 0 40px;
+}
+
+#tracklisting h3 {
+    font-family: "Marcellus SC", serif;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    font-size: 1.75em;
+    -webkit-text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+    text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+}

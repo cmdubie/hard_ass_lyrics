@@ -1,11 +1,106 @@
 ﻿#bandImage {
     float: left;
-    width: 48%
+    width: 415px
 }
 
-#bandInfo, ContentPlaceHolder1_bandMemberGridView {
+#bandImage img {
+    display: block;
+    margin: 0 auto;
+}
+
+#bandInfo, #bandMember {
+    float: left;
+}
+
+#bandInfo {
+    width: 230px;
+    margin: 2px 0 0 20px;
+    padding-left: 15px;
+}
+
+#bandMember {
+    padding-left: 25px;
+    width: 270px;
+}
+
+.alignRightSpan {
     float: right;
-    width: 48%;
+    padding-right: 10px;
+}
+
+#formed, #disbanded, #origin, #generalHeader, #originEval
+{
+    display: block;
+}
+
+#bandInfo span {
+    padding: 1px;
+}
+
+#originEval {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#ContentPlaceHolder1_bandMemberGridView {
+    width: 90%;
+    float: right;
+}
+
+#ContentPlaceHolder1_bandMemberGridView tbody tr th, #generalHeader, #ContentPlaceHolder1_bandInfoDetailsView th {
+    border-bottom: 1px solid #8b8c87;
+}
+
+#ContentPlaceHolder1_bandMemberGridView tbody tr th, #ContentPlaceHolder1_bandMemberGridView tbody tr td {
+    height: 1.1em;
+}
+
+#ContentPlaceHolder1_bandMemberGridView tbody tr th:first-child, #ContentPlaceHolder1_bandMemberGridView tbody tr td:first-child
+{
+    padding-right: 20px;
+}
+
+#ContentPlaceHolder1_bandMemberGridView tbody tr {
+    text-align: left;
+}
+
+#ContentPlaceHolder1_bandInfoDetailsView {
+    margin: 20px 0 0 37px;
+    float: left;
+    width: 525px;    
+}
+
+#ContentPlaceHolder1_bandInfoDetailsView th, #ContentPlaceHolder1_bandMemberGridView tbody th, #generalHeader {
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: bold;
+    -webkit-text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+    text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+}
+
+h3 {
+    font-family: "Marcellus SC", serif;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    font-size: 1.75em;
+    -webkit-text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+    text-shadow: 2px 2px #000, 3px 3px 2px #8b8c87;
+}
+
+.discography-repeater {
+    width: 249px;
+    float: left;
+    margin: 10px 0;
+}
+
+.discography-repeater img, #bandImage img {
+    border: 1px solid #8b8c87;
+    box-shadow: 8px 8px #000; 
+}
+
+.align-right-rating {
+    float: right;
+    margin-right: 20px;
 }
 
 
