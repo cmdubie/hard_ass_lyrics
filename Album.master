@@ -18,7 +18,7 @@ WHERE [Band].BandID = [Album].BandID_FK AND AlbumID = ?">
         <ItemTemplate>
             <h2><%# Eval("AlbumName") %></h2>
             <div id="albumImage">
-                <img src="images\albumcover\<%# Eval("AlbumImageName") %>"/>
+                <img src="images/albumcover/<%# Eval("AlbumImageName") %>"/>
                 <div class="line"><span class="album"><%# Eval("AlbumName") %></span><span class="align-right-rating"><%# Eval("CalculatedRating") %></span></div>
                 <div class="line">by <a href="band.aspx?band=<%# Eval("BandID_FK") %>"><strong><%# Eval("BandName") %></strong></a></div>
             </div> 

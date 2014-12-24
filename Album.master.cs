@@ -16,4 +16,6 @@ public partial class Album : System.Web.UI.MasterPage
     {
         Response.Redirect("albumlyrics.aspx?album=" + Request.QueryString["album"] + "&song=" + e.CommandName);
     }
+
+   
 }

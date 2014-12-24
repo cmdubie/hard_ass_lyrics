@@ -65,7 +65,7 @@ ORDER BY AlbumReleaseDate">
     <asp:Repeater ID="AlbumRepeater" runat="server" DataSourceID="discographyRepeaterDataSource">
         <ItemTemplate>
             <div class="discography-repeater">
-            <a href="albuminfo.aspx?album=<%# Eval("AlbumID") %>"><img src="images\albumcover\<%# Eval("AlbumImageName") %>" height="225" width="225" alt="Image not available."/></a>
+            <a href="albuminfo.aspx?album=<%# Eval("AlbumID") %>"><img src="images/albumcover/<%# Eval("AlbumImageName") %>" height="225" width="225" alt="Image not available."/></a>
             <div class="line"><a href="albuminfo.aspx?album=<%# Eval("AlbumID") %>"><span class="album"><%# Eval("AlbumName") %></span></a><span class="align-right-rating"><%# Eval("CalculatedRating") %></span></div>
             </div>
         </ItemTemplate>
